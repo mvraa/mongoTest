@@ -27,7 +27,7 @@ module.exports = gql`
   }
 
   type Mutation {
-    addPublisher(input: AddPublisherInput!): Publisher!
+    createPublisher(input: AddPublisherInput!): Publisher!
     updatePublisher(id: ID!, input: UpdatePublisherInput!): Publisher!
     deletePublisher(id: ID!): DeletePayload!
   }
