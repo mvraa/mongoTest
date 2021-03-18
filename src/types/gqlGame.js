@@ -27,8 +27,8 @@ module.exports = gql`
   }
 
   input UpdatePublisherInput {
-    name: String!
-    netWorth: Int!
+    name: String
+    netWorth: Int
   }
 
   type DeletePayload{
