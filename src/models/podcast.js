@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
+const {
+  GraphQLInt
+} = require('graphql')
+
 const podcastSchema = new Schema({
   name: {
     type: String,
@@ -11,7 +15,7 @@ const podcastSchema = new Schema({
     trim: true
   },
   episode: {
-    type: Int,
+    type: GraphQLInt,
     trim: true
   }
 });
