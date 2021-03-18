@@ -1,9 +1,9 @@
-const createPodcast = require("./createPodcast");
-const updatePodcast = require("./updatePodcast");
-const deletePodcast = require("./deletePodcast");
+const addPublisher = require("./addPublisher");
+const updatePublisher = require("./updatePublisher");
+const deletePublisher = require("./deletePublisher");
 
 module.exports = {
-  createPodcast,
-  updatePodcast,
-  deletePodcast
+  addPublisher,
+  updatePublisher,
+  deletePublisher
 }
