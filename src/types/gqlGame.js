@@ -36,7 +36,7 @@ module.exports = gql`
   }
 
   type Query {
-    publisher: [Publisher]
+    publishers: [Publisher]
     games: [Game]
   }
 
