@@ -11,7 +11,7 @@ const podcastSchema = new Schema({
     trim: true
   },
   episode: {
-    type: String,
+    type: Int,
     trim: true
   }
 });

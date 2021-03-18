@@ -6,19 +6,19 @@ module.exports = gql`
     id: ID!
     name: String!
     url: String!
-    episode: String!
+    episode: Int!
   }
 
   input CreatePodcastInput {
     name: String!
     url: String!
-    episode: String!
+    episode: Int!
   }
 
   input UpdatePodcastInput {
     name: String
     url: String
-    episode: String
+    episode: Int
   }
 
   input DeletePodcastInput {
