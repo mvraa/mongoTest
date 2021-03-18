@@ -1,5 +1,5 @@
 module.exports = async (_, {}, {models}) => {
-  return await models.Podcast.find();
+  return await models.Publisher.find();
 };
 
 

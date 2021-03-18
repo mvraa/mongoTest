@@ -1,5 +1,7 @@
-const {Podcast} = require("./podcast");
+const {Publisher} = require("./publisher");
+const {Game} = require("./game");
 
 module.exports = {
-  Podcast
+  Publisher,
+  Game
 }
