@@ -1,5 +1,7 @@
-const publishers = require("./publisher");
+const publishers = require("./publishers");
+const games = require("./games");
 
 module.exports = {
-  publishers
+  publishers,
+  games
 }
