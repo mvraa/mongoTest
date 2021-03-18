@@ -3,7 +3,7 @@ const { ApolloError } = require("apollo-server");
 module.exports = async (_, {input}, {models}) => {
 
   try{
-    newPub = await models.PublisherTable.create(input);
+    newPub = await models.Publisher.create(input);
     return newPub
   }
   catch(e){
