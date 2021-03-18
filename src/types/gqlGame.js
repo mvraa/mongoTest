@@ -37,6 +37,7 @@ module.exports = gql`
 
   type Query {
     publishers: [Publisher]
+    games: [Game]
   }
 
   type Mutation {
