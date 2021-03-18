@@ -1,4 +1,4 @@
-const publisher = require("./publisher");
+const publishers = require("./publisher");
 const games = require("./game");
 
 module.exports = {
