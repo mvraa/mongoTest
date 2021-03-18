@@ -2,7 +2,7 @@ const { ApolloError } = require("apollo-server");
 
 module.exports = async (_, {id}, {models}) => {
   
-  const deletePub = await models.Publishers.deleteOne({_id: id})
+  const deletePub = await models.Publisher.deleteOne({_id: id})
 
   if(deletePub.deletedCount) return{id: id}
 

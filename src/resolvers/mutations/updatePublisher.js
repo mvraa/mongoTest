@@ -3,7 +3,7 @@ const { ApolloError } = require("apollo-server");
 module.exports = async (_, {id, input}, {models}) => {
 
   try{
-    const publisherToUpdate = await models.Publishers.findOne({_id: id});
+    const publisherToUpdate = await models.Publisher.findOne({_id: id});
 
     if(!publisherToUpdate) throw new ApolloError(`Could not find publisher with id: '${id}'.`,400);
 
