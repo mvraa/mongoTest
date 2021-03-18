@@ -11,10 +11,14 @@ module.exports = gql`
   type Game {
     id: ID!
     name: String!
+    genre: String!
+    publisherFK: String!
   }
 
   input CreateGameInput {
     name: String!
+    genre: String!
+    publisherFK: String!
   }
 
   input CreatePublisherInput {

@@ -5,6 +5,14 @@ const gameSchema = new Schema({
   name: {
     type: String,
     trim: true
+  },
+  genre: {
+      type: String,
+      trim: true
+  },
+  publisherFK: {
+      type: String,
+      trim: true
   }
 });
 
