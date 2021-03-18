@@ -1,9 +1,9 @@
-const addPublisher = require("./createPublisher");
+const createPublisher = require("./createPublisher");
 const updatePublisher = require("./updatePublisher");
 const deletePublisher = require("./deletePublisher");
 
 module.exports = {
-  addPublisher,
+  createPublisher,
   updatePublisher,
   deletePublisher
 }

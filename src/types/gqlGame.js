@@ -8,7 +8,7 @@ module.exports = gql`
     netWorth: Int!
   }
 
-  input AddPublisherInput {
+  input CreatePublisherInput {
     name: String!
     netWorth: Int!
   }
@@ -27,7 +27,7 @@ module.exports = gql`
   }
 
   type Mutation {
-    createPublisher(input: AddPublisherInput!): Publisher!
+    createPublisher(input: CreatePublisherInput!): Publisher!
     updatePublisher(id: ID!, input: UpdatePublisherInput!): Publisher!
     deletePublisher(id: ID!): DeletePayload!
   }
