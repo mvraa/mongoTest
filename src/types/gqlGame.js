@@ -36,6 +36,9 @@ module.exports = gql`
   }
 
   type Query {
+    publisher(name: String!): Publisher
+    game(name: String!): Game
+    gameByGenre(genre: String!): [Game]
     publishers: [Publisher]
     games: [Game]
   }
