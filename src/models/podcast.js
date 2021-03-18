@@ -9,6 +9,10 @@ const podcastSchema = new Schema({
   url: {
     type: String,
     trim: true
+  },
+  episodes: {
+    type: Number,
+    trim: true
   }
 });
 
