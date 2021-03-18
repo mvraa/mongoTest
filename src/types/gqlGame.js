@@ -28,8 +28,8 @@ module.exports = gql`
 
   type Mutation {
     addPublisher(input: AddPublisherInput!): Publisher!
-    updatePodcast(id: ID!, input: UpdatePodcastInput!): Publisher!
-    deletePodcast(id: ID!): DeletePayload!
+    updatePublisher(id: ID!, input: UpdatePublisherInput!): Publisher!
+    deletePublisher(id: ID!): DeletePayload!
   }
   
 `;
