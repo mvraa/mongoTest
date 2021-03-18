@@ -10,8 +10,8 @@ const podcastSchema = new Schema({
     type: String,
     trim: true
   },
-  episodes: {
-    type: Number,
+  episode: {
+    type: String,
     trim: true
   }
 });
