@@ -1,28 +1,24 @@
 const { gql } = require('apollo-server');
 
-const {
-  GraphQLInt
-} = require('graphql')
-
 module.exports = gql`
 
   type Podcast {
     id: ID!
     name: String!
     url: String!
-    episode: GraphQLInt!
+    episode: String!
   }
 
   input CreatePodcastInput {
     name: String!
     url: String!
-    episode: GraphQLInt!
+    episode: String!
   }
 
   input UpdatePodcastInput {
     name: String
     url: String
-    episode: GraphQLInt
+    episode: String
   }
 
   input DeletePodcastInput {
