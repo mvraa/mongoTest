@@ -1,12 +1,9 @@
-const createPublisher = require("./createPublisher");
-const updatePublisher = require("./updatePublisher");
-const deletePublisher = require("./deletePublisher");
-
-const createGame = require("./createGame");
+const createPodcast = require("./createPodcast");
+const updatePodcast = require("./updatePodcast");
+const deletePodcast = require("./deletePodcast");
 
 module.exports = {
-  createPublisher,
-  updatePublisher,
-  deletePublisher,
-  createGame
+  createPodcast,
+  updatePodcast,
+  deletePodcast
 }

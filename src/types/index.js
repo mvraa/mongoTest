@@ -1,5 +1,5 @@
-const gqlGame = require("./gqlGame");
+const Podcast = require("./Podcast");
 
 module.exports = [
-  gqlGame
+  Podcast
 ]

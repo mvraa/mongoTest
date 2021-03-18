@@ -1,10 +1,10 @@
 const { ApolloServer } = require("apollo-server");
-const mongo = require("./config/db");
+const connectDb = require("./config/db");
 const typeDefs = require("./types");
 const resolvers = require("./resolvers");
 const models = require("./models");
 
-mongo();
+connectDb();
 
 const server = new ApolloServer({ 
   typeDefs, 
@@ -12,6 +12,6 @@ const server = new ApolloServer({
   context: {models}
 });
 
-server.listen({ port: process.env.PORT || 3000 }).then(({ url }) => {
-  console.log(`Server running at: ${url}`);
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
 });
