@@ -8,6 +8,18 @@ module.exports = gql`
     url: String!
   }
 
+  type Publisher {
+    id: Number!
+    name: String!
+    netWorth: Number!
+  }
+
+  input CreatePublisherInput {
+    id: Number!
+    name: String!
+    netWorth: Number!
+  }
+
   input CreatePodcastInput {
     name: String!
     url: String!
@@ -28,9 +40,11 @@ module.exports = gql`
 
   type Query {
     podcasts: [Podcast]
+    publisher: [Publisher]
   }
 
   type Mutation {
+    addPublisher(input: CreatePublisherInput!): Publisher!
     createPodcast(input: CreatePodcastInput!): Podcast!
     updatePodcast(id: ID!, input: UpdatePodcastInput!): Podcast!
     deletePodcast(id: ID!): DeletePayload!
