@@ -8,6 +8,15 @@ module.exports = gql`
     netWorth: Int!
   }
 
+  type Game {
+    id: ID!
+    name: String!
+  }
+
+  input CreateGameInput {
+    name: String!
+  }
+
   input CreatePublisherInput {
     name: String!
     netWorth: Int!
@@ -27,6 +36,7 @@ module.exports = gql`
   }
 
   type Mutation {
+    createGame(input: CreateGameInput!): Game!
     createPublisher(input: CreatePublisherInput!): Publisher!
     updatePublisher(id: ID!, input: UpdatePublisherInput!): Publisher!
     deletePublisher(id: ID!): DeletePayload!
